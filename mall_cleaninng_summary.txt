@@ -1,0 +1,10 @@
+I worked on cleaning the Mall Customers dataset, which originally had 200 records and 5 columns — CustomerID, Gender, Age, Annual Income (k$), and Spending Score (1–100).
+First, I renamed all the columns to keep them consistent and easier to work with. I removed spaces and hyphens, converted everything to lowercase, and replaced them with underscores. For example, “Spending Score (1-100)” became “spending_score_(1_100)”.
+Then I checked for duplicate entries and found a couple, which I removed to make sure each customer appeared only once. The dataset didn’t have any major missing values, but I still verified each column and applied simple checks just to be safe.
+For the Gender column, I made sure all values were written properly — just “Male” or “Female”. I also confirmed that the numeric columns like age, income, and spending score were in the right data type.
+To make the data more accurate, I handled outliers using the IQR method. This helped in removing extreme values that could have affected future analysis or visualizations.
+After cleaning, the dataset now has 198 rows and 5 columns. It’s free of duplicates, missing data, and inconsistencies. The final file is well-structured and ready for analysis or clustering.
+
+Final Output Files:
+-Mall_customers_cleaned.csv
+-mall_cleaning_summary.txt
